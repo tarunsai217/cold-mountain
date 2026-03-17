@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Fix 1: bump root font size by ~2-3px. Browser default is 16px.
+       Setting to 18px means all rem-based sizes scale up proportionally. */
+    font-size: 18px;
+  }
+  body {
+    @apply font-jost font-light text-charcoal bg-warm-white overflow-x-hidden;
+  }
+  button { font-family: inherit; }
+  input, textarea, select { font-family: inherit; }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .font-display-italic {
+    @apply font-cormorant italic font-light;
+  }
+  /* Hide scrollbar but keep scroll behaviour */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
