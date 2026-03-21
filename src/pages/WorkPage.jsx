@@ -40,11 +40,11 @@ function WorkCard({ item }) {
 
   return (
     <div
-      className="relative overflow-hidden cursor-default group"
+      className="relative overflow-hidden cursor-default group h-full"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div className="aspect-square overflow-hidden bg-cream">
+      <div className=" h-full overflow-hidden bg-cream">
         <img
           src={img}
           alt={item.title}
@@ -53,7 +53,7 @@ function WorkCard({ item }) {
       </div>
 
       {/* Hover overlay with title + medium */}
-      <div className={`absolute inset-0 bg-charcoal/70 flex flex-col justify-end p-4 transition-opacity duration-300 ${hovered ? "opacity-100" : "opacity-0"}`}>
+      {/* <div className={`absolute inset-0 bg-charcoal/70 flex flex-col justify-end p-4 transition-opacity duration-300 ${hovered ? "opacity-100" : "opacity-0"}`}>
         <p className="font-cormorant text-cream text-lg font-light leading-snug">{item.title}</p>
         {item.medium && (
           <p className="text-[0.76rem] tracking-[0.12em] uppercase text-clay-light mt-1 font-jost">{item.medium}</p>
@@ -61,14 +61,14 @@ function WorkCard({ item }) {
         {item.year && (
           <p className="text-[0.74rem] text-white/50 mt-0.5 font-jost">{item.year}</p>
         )}
-      </div>
+      </div> */}
 
       {/* Featured badge */}
-      {item.featured && (
+      {/* {item.featured && (
         <span className="absolute top-3 left-3 text-[0.6rem] tracking-[0.14em] uppercase bg-clay text-white px-2 py-0.5 font-jost">
           Featured
         </span>
-      )}
+      )} */}
     </div>
   );
 }
@@ -113,7 +113,7 @@ export default function WorkPage() {
           {filtered.length === 0 ? (
             <p className="text-center text-stone py-24 text-base">Nothing here yet — check back soon.</p>
           ) : (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 items-stretch">
               {filtered.map(item => (
                 <WorkCard key={item.id} item={item} />
               ))}

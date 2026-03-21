@@ -2,13 +2,14 @@
 // Shows 3 product images on the landing page with a "Browse All Works" CTA.
 // Uses real work images from src/assets/images.js for better visual quality.
 import { Link } from "react-router-dom";
-import { work_product_1, work_product_3, work_product_5 } from "../../assets/images";
+import { about_wallpaper ,shop_dinnerware,shop_drinkware , shop_serverware } from "../../assets/images";
 import { SectionLabel, SectionTitle, DividerLine, BtnPrimary } from "../ui";
 
 const ITEMS = [
-  { img: work_product_1, name: "Studio Mugs",     type: "Wheel Thrown · Production Series" },
-  { img: work_product_3, name: "Ceramic Knobs",   type: "Hand Formed · Each one unique" },
-  { img: work_product_5, name: "Serving Plates",  type: "Wheel Thrown · Glazed" },
+  { img: shop_dinnerware, name: "Dinnerware",     type: "" },
+  { img: shop_drinkware, name: "DrinkWare",   type: "" },
+  { img: shop_serverware, name: "Serverware",  type: "" },
+  { img: about_wallpaper, name: "Home Decor",  type: "" },
 ];
 
 export default function ShopTeaser() {
@@ -20,7 +21,7 @@ export default function ShopTeaser() {
         Functional ware,<br /><em className="italic text-clay-dark">made with care</em>
       </SectionTitle>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-5">
         {ITEMS.map(item => (
           <Link key={item.name} to="/shop" className="group no-underline">
             <div className="aspect-square overflow-hidden bg-cream mb-3">

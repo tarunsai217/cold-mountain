@@ -2,122 +2,148 @@
 import SEO    from "../../components/SEO";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { Link } from "react-router-dom";
-import { studio_split, course_fire } from "../../assets/images";
+import { lakhan_portrait } from "../../assets/images"; // swap to your actual image import
 
-const TIMELINE = [
-  { year: "2004", text: "Born into a family of craftspeople in Dharamshala, Lakhan grew up watching his grandfather shape clay on a hand-driven wheel in the back room of their home." },
-  { year: "2012", text: "Began formal training under a master potter in Kangra. Spent three years learning centering, throwing, and the patience a spinning wheel demands." },
-  { year: "2016", text: "Travelled across Rajasthan and Tamil Nadu to study regional ceramic traditions — from the blue pottery of Jaipur to the terracotta temples of Bishnupur." },
-  { year: "2019", text: "Returned to the Dhauladhar foothills and co-founded The Cold Mountain Studio with Swapna, converting a barn on Byool Farm into a working studio." },
-  { year: "2021", text: "Led the studio's first Fire Festival — a four-day communal pit-firing that brought together potters, artists, and curious beginners from across India." },
-  { year: "Now",  text: "Lakhan teaches and makes full-time at the studio. His work is characterised by understated forms, textured surfaces, and glazes that carry the mineral memory of the Himalayas." },
+const FACTS = [
+  ["From",           "Bangalore → Dharamshala, HP"],
+  ["Studio founded", "2017, The Cold Mountain Studio"],
+  ["Healing work",   "Reiki Grandmaster · Hypnotherapy"],
+  ["Studies",        "Kashmir Shaivism · Astrology · Alchemy · Tarot"],
+  ["Home",           "Byool Farm, Dharamshala"],
 ];
 
 export default function LakhanPage() {
   return (
     <>
-      <SEO title="Lakhan — The Founder" description="Meet Lakhan, co-founder and lead potter at The Cold Mountain Studio, Dharamshala." path="/about/lakhan" />
+      <SEO
+        title="Lakhan Kaushik — Co-founder"
+        description="Reiki Grandmaster, potter, and co-founder of The Cold Mountain Studio, Dharamshala."
+        path="/about/lakhan"
+      />
       <Navbar />
+
       <main className="min-h-screen bg-warm-white">
+        <div className="max-w-[680px] mx-auto px-6 md:px-8 py-16 md:py-24">
 
-        {/* Hero */}
-        <div className="relative h-[55vh] overflow-hidden">
-          <img src={studio_split} alt="Lakhan at the studio"
-            className="w-full h-full object-cover object-center brightness-[0.6]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent" />
-          <div className="absolute bottom-0 left-0 px-8 md:px-16 pb-10 text-white">
-            <span className="block text-[0.72rem] tracking-[0.3em] uppercase text-clay-light mb-2">The Founder</span>
-            <h1 className="font-cormorant text-[clamp(2.4rem,5vw,4rem)] font-light leading-tight">Lakhan</h1>
-            <p className="text-base text-white/70 mt-1">Potter · Teacher · Co-founder</p>
+          {/* ── Header: portrait + name inline ── */}
+          <header className="flex items-center gap-5 mb-14">
+            <div className="w-16 h-16 rounded-sm overflow-hidden flex-shrink-0 border border-black/10">
+              <img
+                src={lakhan_portrait}
+                alt="Lakhan Kaushik"
+                className="w-full h-full object-cover saturate-[0.8]"
+              />
+            </div>
+            <div>
+              <span className="block text-[0.68rem] tracking-[0.28em] uppercase text-stone mb-1">
+                Co-founder · The Cold Mountain Studio
+              </span>
+              <h1 className="font-cormorant text-[clamp(1.7rem,3.5vw,2.4rem)] font-light leading-tight text-charcoal">
+                Lakhan Kaushik
+              </h1>
+              <p className="text-[0.78rem] text-stone mt-0.5 font-jost">
+                Reiki Grandmaster · Potter · Teacher
+              </p>
+            </div>
+          </header>
+
+          {/* ── Pull quote ── */}
+          <div className="bg-clay/[0.06] border-l-2 border-clay px-6 py-5 mb-14 rounded-sm">
+            <p className="font-cormorant text-[1.15rem] italic leading-relaxed text-charcoal">
+              "Art talks to those who take the time to listen. My goal is to help others
+              build a sense of wonder and find a oneness with all that is beautiful around us."
+            </p>
           </div>
-        </div>
 
-        {/* About nav */}
-        <div className="sticky top-[72px] z-30 bg-warm-white border-b border-black/10 px-8 md:px-16">
-          <div className="flex gap-0">
-            {[
-              { label: "Lakhan", to: "/about/lakhan" },
-              { label: "Swapna", to: "/about/swapna" },
-            ].map(({ label, to }) => (
-              <Link key={to} to={to}
-                className={`text-[0.72rem] tracking-[0.15em] uppercase px-5 py-3 border-b-2 -mb-px no-underline transition-colors font-jost
-                  ${label === "Lakhan" ? "text-clay border-clay" : "text-stone border-transparent hover:text-clay"}`}
-              >{label}</Link>
+          {/* ── Section 1: The turn ── */}
+          <section className="mb-14">
+            <span className="block text-[0.68rem] tracking-[0.28em] uppercase text-clay mb-4 font-jost">
+              The turn
+            </span>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light mb-4">
+              In 2011, Lakhan Kaushik traded the predictable bustle of Bangalore for the raw,
+              quiet rhythms of the mountains in Dharamshala. A Reiki Grandmaster and certified
+              hypnotherapist, he founded the Maitreya Study Centre — establishing himself as a
+              guide in the realms of healing and spiritual growth.
+            </p>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light">
+              His life is a deliberate tapestry of esoteric mastery — ranging from astrology and
+              alchemy to the rigorous study of Kashmir Shaivism and Tarot. This spiritual inquiry
+              eventually demanded a physical anchor, leading him to the tactile world of clay.
+            </p>
+          </section>
+
+          {/* ── Fact grid ── */}
+          <div className="grid grid-cols-2 gap-px border border-black/8 mb-14 rounded-sm overflow-hidden">
+            {FACTS.map(([label, val]) => (
+              <div key={label} className="bg-warm-white px-4 py-3.5 border-b border-black/8 last:col-span-2">
+                <span className="block text-[0.68rem] tracking-[0.2em] uppercase text-stone mb-0.5 font-jost">
+                  {label}
+                </span>
+                <span className="text-[0.82rem] text-earth">{val}</span>
+              </div>
             ))}
           </div>
-        </div>
 
-        <div className="max-w-[1100px] mx-auto px-6 md:px-16 py-16 grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
+          {/* ── Section 2: The studio ── */}
+          <section className="mb-14">
+            <span className="block text-[0.68rem] tracking-[0.28em] uppercase text-clay mb-4 font-jost">
+              The studio
+            </span>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light mb-4">
+              In 2017, Lakhan launched The Cold Mountain Studio. Choosing to bypass the traditional
+              constraints of formal ceramic schooling, he instead forged a sophisticated craft through
+              deep immersion and collaboration with accomplished artists.
+            </p>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light">
+              His work is characterised by a sophisticated and scholarly curiosity. He approaches the
+              studio as a living laboratory, integrating local materials into his practice to bridge
+              the gap between ancient tradition and modern expression.
+            </p>
+          </section>
 
-          {/* Left: portrait + quick facts */}
-          <aside>
-            <div className="aspect-[3/4] overflow-hidden mb-6 rounded-sm">
-              <img src={course_fire} alt="Lakhan" className="w-full h-full object-cover saturate-[0.85]" />
-            </div>
-            <div className="space-y-3">
-              {[
-                ["Based in",    "Dharamshala, HP"],
-                ["Medium",      "Stoneware, Earthenware"],
-                ["Techniques",  "Wheel throwing, Pit firing, Raku"],
-                ["Teaches",     "All levels · Glaze chemistry · Fire Festival"],
-                ["Languages",   "Hindi, English, Pahari"],
-              ].map(([label, val]) => (
-                <div key={label} className="border-b border-black/8 pb-2.5">
-                  <span className="text-[0.76rem] tracking-[0.15em] uppercase text-stone block mb-0.5">{label}</span>
-                  <span className="text-sm text-earth">{val}</span>
-                </div>
-              ))}
-            </div>
-          </aside>
-
-          {/* Right: bio + timeline */}
-          <div>
-            <span className="block text-[0.72rem] tracking-[0.25em] uppercase text-clay mb-3">About</span>
-            <h2 className="font-cormorant text-[clamp(1.8rem,3vw,2.6rem)] font-light text-charcoal mb-6 leading-tight">
-              Shaped by mountains,<br /><em className="italic text-clay-dark">grounded in clay</em>
-            </h2>
-
-            <div className="space-y-4 mb-12">
-              <p className="text-base leading-relaxed text-earth-light">
-                Lakhan doesn't think of pottery as making objects. He thinks of it as listening. Listening to what the clay wants to become, what the fire wants to do, what the mountain air wants to deposit on a surface that spends twelve hours at 1260 degrees.
-              </p>
-              <p className="text-base leading-relaxed text-earth-light">
-                His pots are not decorative. They are made to be held, to be drunk from, to be picked up without thinking twice and set down without care. A good pot, he says, should eventually look like it was found, not made.
-              </p>
-              <p className="text-base leading-relaxed text-earth-light">
-                As a teacher, Lakhan is patient to a fault. He has watched hundreds of students curse their first centring attempts, and he still finds it funny. His belief is simple: the best way to teach pottery is to make pottery beside someone, not in front of them.
-              </p>
-            </div>
-
-            {/* Timeline */}
-            <div>
-              <span className="block text-[0.72rem] tracking-[0.25em] uppercase text-clay mb-6">Journey</span>
-              <div className="relative border-l border-clay-light/50 pl-8 space-y-8">
-                {TIMELINE.map(({ year, text }) => (
-                  <div key={year} className="relative">
-                    <div className="absolute -left-[34px] top-0.5 w-3 h-3 rounded-full bg-clay border-2 border-warm-white" />
-                    <span className="block text-[0.79rem] tracking-[0.2em] uppercase text-clay mb-1.5 font-jost">{year}</span>
-                    <p className="text-sm leading-relaxed text-earth-light">{text}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="mt-12 pt-8 border-t border-black/10 flex gap-4 flex-wrap">
-              <Link to="/about/swapna"
-                className="text-[0.72rem] tracking-[0.12em] uppercase text-earth border-b border-black/15 pb-px hover:text-clay hover:border-clay transition-colors no-underline font-jost"
-              >Meet Swapna →</Link>
-              <span className="text-stone">·</span>
-              <a href="https://www.instagram.com/thecoldmountainstudio/" target="_blank" rel="noreferrer"
-                className="text-[0.72rem] tracking-[0.12em] uppercase text-earth border-b border-black/15 pb-px hover:text-clay hover:border-clay transition-colors no-underline font-jost"
-              >Follow on Instagram →</a>
-            </div>
+          {/* ── Breakout quote ── */}
+          <div className="border-t border-b border-black/10 py-8 mb-14 text-center">
+            <p className="font-cormorant text-[1.35rem] font-light italic leading-relaxed text-clay-dark">
+              Every piece that leaves the studio carries<br />
+              the grounded, intentional energy<br />
+              of the Himalayan foothills.
+            </p>
           </div>
+
+          {/* ── Section 3: The practice ── */}
+          <section className="mb-14">
+            <span className="block text-[0.68rem] tracking-[0.28em] uppercase text-clay mb-4 font-jost">
+              The practice
+            </span>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light mb-4">
+              Far from mere experimentation, he is dedicated to the study and construction of diverse
+              kiln designs from around the globe — reviving ancestral firing techniques that have
+              connected humanity to earth and fire across centuries.
+            </p>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light">
+              Today, Lakhan resides at Byool Farm, a self-sufficient sanctuary where he balances the
+              demands of natural farming with the companionship of his cows, goats, chickens, and
+              four dogs. Every piece is more than a vessel; it carries the grounded, intentional
+              energy of the Himalayan foothills.
+            </p>
+          </section>
+
+          {/* ── Footer links ── */}
+          <div className="pt-8 border-t border-black/10 flex gap-5 flex-wrap">
+            <a
+              href="https://www.instagram.com/thecoldmountainstudio/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[0.68rem] tracking-[0.12em] uppercase text-earth border-b border-black/15 pb-px hover:text-clay hover:border-clay transition-colors no-underline font-jost"
+            >
+              Follow on Instagram →
+            </a>
+          </div>
+
         </div>
       </main>
+
       <Footer />
     </>
   );

@@ -43,9 +43,9 @@ export default function BlogPostPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-warm-white">
+      <main className="min-h-screen bg-warm-white mt-[4.5rem]">
         {/* Hero image */}
-        <div className="w-full aspect-[21/9] overflow-hidden">
+        <div className="w-full h-[100vh] aspect-[21/9] overflow-hidden">
           <img src={img} alt={post.title} className="w-full h-full object-cover brightness-[0.75]" />
         </div>
 

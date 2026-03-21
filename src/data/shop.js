@@ -23,7 +23,7 @@ export const SHOP_CATEGORIES = [
 export const PRODUCTS = [
   {
     id: 1,
-    imgKey: "work_product_1",
+    imgKey: "about_wallpaper",
     name:   "Studio Mugs",
     type:   "Wheel Thrown · Production Series",
     cat:    "mugs",

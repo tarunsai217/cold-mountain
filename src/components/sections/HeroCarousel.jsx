@@ -60,7 +60,7 @@ export default function HeroCarousel() {
           <div key={i} className="relative min-w-[100vw] w-[100vw] flex-shrink-0 h-full overflow-hidden">
             <img src={s.img} alt={String(i)} className="w-full h-full object-cover brightness-[0.65] saturate-80" />
             <div className="absolute inset-0 bg-gradient-to-r from-[rgba(18,10,6,0.72)] via-[rgba(18,10,6,0.2)] to-transparent pointer-events-none" />
-            <div className={`absolute bottom-[11%] left-16 max-w-[520px] text-white transition-all duration-700
+            <div className={`absolute bottom-[11%] left-4 md:left-16 max-w-[520px] text-white transition-all duration-700
               ${i === cur ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}`}
             >
               <span className="block text-[0.75rem] tracking-[0.3em] uppercase text-clay-light mb-4">{s.eyebrow}</span>

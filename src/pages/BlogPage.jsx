@@ -49,9 +49,13 @@ export default function BlogPage() {
     <>
       <SEO title="Journal" description="Stories, reflections, and craft notes from The Cold Mountain Studio, Dharamshala." path="/blog" />
       <Navbar />
-      <main className="min-h-screen bg-warm-white">
+      <main className="min-h-screen bg-warm-white mt-[4.5rem]">
         {/* Header */}
-        <div className="pt-36 pb-12 px-4 md:px-16 bg-charcoal text-center">
+        <div style={{
+    backgroundImage: `url(${IMGS.blog_background})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }} className="pt-36 pb-12 px-4 md:px-16 bg-charcoal text-center">
           <SectionLabel light className="justify-center">From the Studio</SectionLabel>
           <h1 className="font-cormorant text-[clamp(2rem,4vw,3.2rem)] font-light text-cream leading-tight mb-3">
             The <em className="italic text-clay-light">Journal</em>

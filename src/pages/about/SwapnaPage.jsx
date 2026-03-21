@@ -2,127 +2,149 @@
 import SEO    from "../../components/SEO";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { Link } from "react-router-dom";
-import { course_monthly, course_glaze } from "../../assets/images";
+import { swapna_portrait } from "../../assets/images"; // swap to your actual image import
 
-const PHILOSOPHY = [
-  {
-    title: "Food as craft",
-    body: "Swapna runs the kitchen at Byool Farm the same way she runs the studio — with attention to season, source, and the slow accumulation of small decisions that make something nourishing. Every meal is made from scratch, mostly from the farm.",
-  },
-  {
-    title: "The body of the pot",
-    body: "Her pots are often described as quiet. Low, wide forms that feel settled. She is drawn to the moment just before a form becomes a vessel — the threshold between mass and hollow.",
-  },
-  {
-    title: "Glazing as research",
-    body: "Swapna keeps a logbook of every glaze test she has ever run. Twenty-seven notebooks so far. She believes that glaze chemistry is the most honest intersection of art and science, and teaches the studio's Glaze Course from that conviction.",
-  },
+const FACTS = [
+  ["From",             "Corporate world → Dharamshala, HP"],
+  ["Moved to mountains", "2014"],
+  ["Background",       "Journalist · Corporate career · 20+ countries"],
+  ["Studio practice",  "Hand-building · Wheel throwing · Storytelling"],
+  ["Also offers",      "The Listening Ear — judgment-free reflection"],
 ];
 
 export default function SwapnaPage() {
   return (
     <>
-      <SEO title="Swapna — Co-founder" description="Meet Swapna, co-founder, glaze researcher, and farm keeper at The Cold Mountain Studio, Dharamshala." path="/about/swapna" />
+      <SEO
+        title="Swapna P — Co-founder"
+        description="Journalist turned potter, co-founder of The Cold Mountain Studio, Dharamshala."
+        path="/about/swapna"
+      />
       <Navbar />
+
       <main className="min-h-screen bg-warm-white">
+        <div className="max-w-[680px] mx-auto px-6 md:px-8 py-16 md:py-24">
 
-        {/* Hero */}
-        <div className="relative h-[55vh] overflow-hidden">
-          <img src={course_monthly} alt="Swapna at the studio"
-            className="w-full h-full object-cover object-top brightness-[0.6]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent" />
-          <div className="absolute bottom-0 left-0 px-8 md:px-16 pb-10 text-white">
-            <span className="block text-[0.72rem] tracking-[0.3em] uppercase text-clay-light mb-2">The Co-founder</span>
-            <h1 className="font-cormorant text-[clamp(2.4rem,5vw,4rem)] font-light leading-tight">Swapna</h1>
-            <p className="text-base text-white/70 mt-1">Potter · Glaze Researcher · Farm Keeper</p>
+          {/* ── Header: portrait + name inline ── */}
+          <header className="flex items-center gap-5 mb-14">
+            <div className="w-16 h-16 rounded-sm overflow-hidden flex-shrink-0 border border-black/10">
+              <img
+                src={swapna_portrait}
+                alt="Swapna P"
+                className="w-full h-full object-cover saturate-[0.8]"
+              />
+            </div>
+            <div>
+              <span className="block text-[0.68rem] tracking-[0.28em] uppercase text-stone mb-1">
+                Co-founder · The Cold Mountain Studio
+              </span>
+              <h1 className="font-cormorant text-[clamp(1.7rem,3.5vw,2.4rem)] font-light leading-tight text-charcoal">
+                Swapna P
+              </h1>
+              <p className="text-[0.78rem] text-stone mt-0.5 font-jost">
+                Potter · Storyteller · Teacher
+              </p>
+            </div>
+          </header>
+
+          {/* ── Pull quote ── */}
+          <div className="bg-clay/[0.06] border-l-2 border-clay px-6 py-5 mb-14 rounded-sm">
+            <p className="font-cormorant text-[1.15rem] italic leading-relaxed text-charcoal">
+              "Pottery is the unlearning of a structured, corporate-trained mind — each piece
+              a sanctuary where the structure of the past meets the fluid freedom of the present."
+            </p>
           </div>
-        </div>
 
-        {/* About nav */}
-        <div className="sticky top-[72px] z-30 bg-warm-white border-b border-black/10 px-8 md:px-16">
-          <div className="flex gap-0">
-            {[
-              { label: "Lakhan", to: "/about/lakhan" },
-              { label: "Swapna", to: "/about/swapna" },
-            ].map(({ label, to }) => (
-              <Link key={to} to={to}
-                className={`text-[0.72rem] tracking-[0.15em] uppercase px-5 py-3 border-b-2 -mb-px no-underline transition-colors font-jost
-                  ${label === "Swapna" ? "text-clay border-clay" : "text-stone border-transparent hover:text-clay"}`}
-              >{label}</Link>
+          {/* ── Section 1: The detour ── */}
+          <section className="mb-14">
+            <span className="block text-[0.68rem] tracking-[0.28em] uppercase text-clay mb-4 font-jost">
+              The detour
+            </span>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light mb-4">
+              Swapna's path to the wheel wasn't a straight line — it was a conscious detour.
+              After twenty years of navigating a successful corporate career across various
+              countries, she moved to the mountains of Dharamshala in 2014, choosing to trade
+              a comfortable paycheck for a life of intentionality.
+            </p>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light">
+              At the studio, she continues her lifelong relationship with storytelling — now
+              translating the narratives once captured in words as a journalist into the tactile
+              language of earth and fire.
+            </p>
+          </section>
+
+          {/* ── Fact grid ── */}
+          <div className="grid grid-cols-2 gap-px border border-black/8 mb-14 rounded-sm overflow-hidden">
+            {FACTS.map(([label, val]) => (
+              <div key={label} className="bg-warm-white px-4 py-3.5 border-b border-black/8 last:col-span-2">
+                <span className="block text-[0.68rem] tracking-[0.2em] uppercase text-stone mb-0.5 font-jost">
+                  {label}
+                </span>
+                <span className="text-[0.82rem] text-earth">{val}</span>
+              </div>
             ))}
           </div>
-        </div>
 
-        <div className="max-w-[1100px] mx-auto px-6 md:px-16 py-16 grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16">
+          {/* ── Section 2: The practice ── */}
+          <section className="mb-14">
+            <span className="block text-[0.68rem] tracking-[0.28em] uppercase text-clay mb-4 font-jost">
+              The practice
+            </span>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light mb-4">
+              While she values the discipline of the wheel, Swapna finds her truest expression
+              in hand-building techniques. She embraces the organic imperfections and the
+              distinctively handmade look and feel these methods allow — treating each piece as
+              a sanctuary for exploration.
+            </p>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light">
+              Her work is a testament to the beauty of a second chapter. Each piece she creates
+              is part of an ongoing exploration of slow living — a journey that isn't about
+              reaching a destination, but about embracing the rhythmic, messy, and beautiful
+              process of starting over.
+            </p>
+          </section>
 
-          {/* Left */}
-          <aside>
-            <div className="aspect-[3/4] overflow-hidden mb-6 rounded-sm">
-              <img src={course_glaze} alt="Swapna" className="w-full h-full object-cover saturate-[0.85]" />
-            </div>
-            <div className="space-y-3">
-              {[
-                ["Based in",    "Dharamshala, HP"],
-                ["Medium",      "Stoneware, experimental glazes"],
-                ["Speciality",  "Glaze chemistry, reduction firing"],
-                ["Teaches",     "Glaze Course · Monthly Course · Farm kitchen"],
-                ["Languages",   "Kannada, Hindi, English"],
-              ].map(([label, val]) => (
-                <div key={label} className="border-b border-black/8 pb-2.5">
-                  <span className="text-[0.76rem] tracking-[0.15em] uppercase text-stone block mb-0.5">{label}</span>
-                  <span className="text-sm text-earth">{val}</span>
-                </div>
-              ))}
-            </div>
-          </aside>
-
-          {/* Right */}
-          <div>
-            <span className="block text-[0.72rem] tracking-[0.25em] uppercase text-clay mb-3">About</span>
-            <h2 className="font-cormorant text-[clamp(1.8rem,3vw,2.6rem)] font-light text-charcoal mb-6 leading-tight">
-              Where science meets<br /><em className="italic text-clay-dark">the surface of things</em>
-            </h2>
-
-            <div className="space-y-4 mb-12">
-              <p className="text-base leading-relaxed text-earth-light">
-                Swapna arrived at pottery sideways — through chemistry, of all things. She had been studying material science when she first sat at a wheel, and found that everything she had been reading about atoms and bonds suddenly made tactile sense. Clay was just chemistry you could hold.
-              </p>
-              <p className="text-base leading-relaxed text-earth-light">
-                She co-founded the studio with Lakhan in 2019, taking charge of the farm, the kitchen, and what became an obsessive research programme into local glazes made from wood ash, rice husk, and minerals sourced from the Himachal valley floor.
-              </p>
-              <p className="text-base leading-relaxed text-earth-light">
-                Students who come for the Glaze Course often say it changed how they see pottery. Swapna's approach is to make the chemistry legible — not to simplify it, but to show that understanding it is the beginning of freedom, not the end of intuition.
-              </p>
-            </div>
-
-            {/* Philosophy cards */}
-            <div>
-              <span className="block text-[0.72rem] tracking-[0.25em] uppercase text-clay mb-6">Philosophy</span>
-              <div className="space-y-6">
-                {PHILOSOPHY.map(({ title, body }) => (
-                  <div key={title} className="border-l-2 border-clay-light pl-5">
-                    <h3 className="font-cormorant text-lg font-normal text-charcoal mb-2">{title}</h3>
-                    <p className="text-sm leading-relaxed text-earth-light">{body}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="mt-12 pt-8 border-t border-black/10 flex gap-4 flex-wrap">
-              <Link to="/about/lakhan"
-                className="text-[0.72rem] tracking-[0.12em] uppercase text-earth border-b border-black/15 pb-px hover:text-clay hover:border-clay transition-colors no-underline font-jost"
-              >Meet Lakhan →</Link>
-              <span className="text-stone">·</span>
-              <a href="https://www.instagram.com/thecoldmountainstudio/" target="_blank" rel="noreferrer"
-                className="text-[0.72rem] tracking-[0.12em] uppercase text-earth border-b border-black/15 pb-px hover:text-clay hover:border-clay transition-colors no-underline font-jost"
-              >Follow on Instagram →</a>
-            </div>
+          {/* ── Breakout quote ── */}
+          <div className="border-t border-b border-black/10 py-8 mb-14 text-center">
+            <p className="font-cormorant text-[1.35rem] font-light italic leading-relaxed text-clay-dark">
+              A journey that isn't about reaching<br />
+              a destination — but about embracing<br />
+              the beauty of starting over.
+            </p>
           </div>
+
+          {/* ── Section 3: The listening ear ── */}
+          <section className="mb-14">
+            <span className="block text-[0.68rem] tracking-[0.28em] uppercase text-clay mb-4 font-jost">
+              The listening ear
+            </span>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light mb-4">
+              Outside of her studio practice, Swapna offers The Listening Ear — a space for
+              judgment-free reflection. Much like working with clay, this process is about
+              untangling complex thoughts and finding fresh perspectives.
+            </p>
+            <p className="text-[0.95rem] leading-[1.9] text-earth-light">
+              It isn't about providing fixes, but about enabling others to break through thinking
+              loops and find their own path forward. The same patience she brings to a piece of
+              clay, she brings to a conversation.
+            </p>
+          </section>
+
+          {/* ── Footer links ── */}
+          <div className="pt-8 border-t border-black/10 flex gap-5 flex-wrap">
+            <a
+              href="https://www.instagram.com/thecoldmountainstudio/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-[0.68rem] tracking-[0.12em] uppercase text-earth border-b border-black/15 pb-px hover:text-clay hover:border-clay transition-colors no-underline font-jost"
+            >
+              Follow on Instagram →
+            </a>
+          </div>
+
         </div>
       </main>
+
       <Footer />
     </>
   );

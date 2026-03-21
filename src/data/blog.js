@@ -6,8 +6,108 @@
 
 export const POSTS = [
   {
+    slug: "pottery-in-the-meme-age-psychology-survival-and-the-daily-plot-twist",
+    imgKey: "blog1",
+    category: "Psychology",
+    title: "Pottery in the Meme Age: Psychology, Survival, and the Daily Plot Twist",
+    date: "March 19, 2026",
+    readTime: "5 min read",
+    excerpt:
+      "You don't need me to tell you about algorithm drama. If you're a potter in 2025, your wheel probably shakes more from phone pings than foot pedals. The studio smells like clay — with a hefty aftertaste of \"What's trending?\"",
+    author: "Dr Rohita Sateesh (Counselling Psychologist)",
+    body: `You don't need me to tell you about algorithm drama. If you're a potter in 2025, your wheel probably shakes more from phone pings than foot pedals. The studio smells like clay — with a hefty aftertaste of "What's trending?"
+
+**The Real Showdown: Pottery vs. Performance Art**
+
+Hands up if your ugliest piece flopped in silence but your "eh, whatever" mug went viral. Ever spiral after a thumb scroll, convinced everyone else has a hotline to the digital gods?
+
+It's not you, it's neuroscience. Brains run on dopamine (hello likes, goodbye self-worth) and stress, with a dash of "Am I making this, or is my phone?" Thanks, evolution.
+
+*Curiosity bite:* If the whole pottery world could only see one thing you made — what would, and wouldn't, you pick?
+
+**Burnout: Because Your Clay Isn't the Only Thing Getting Overfired**
+
+Burnout doesn't clock out at 5pm or after a batch of sales. It creeps in around your second espresso and your fourth round of "refresh." If you're playing "like roulette," congratulations — you're human.
+
+Let's drop the shame: Feel numb? Cynical? POST-joy instead of pre-joy? Welcome to the club. The price of visibility isn't just battery life — it bakes directly into your bones.
+
+*Curiosity break:* If you could only make one "just for me" piece a month — no audience, no "story," no approval — what would it be? Would you even remember?
+
+**The Envy Olympics (No Medals Awarded)**
+
+Let's get weirdly honest — envy is the default setting. Every one of us has zoomed in on a viral feed and muttered, "How?!" The trick isn't independence (total fiction), it's using envy as a map:
+
+- "I want that joy."
+- "That risk. That freedom."
+- Or just: "Why do they always get that blue so right?!"
+
+**Agency is Your Sneakiest Art Form**
+
+Algorithms don't love you back. People barely do. But your own weird rituals? That's where the magic sneaks back in. Make a space no phone sees. Trade war stories about failed glazes. Take a digital day off — not as punishment, but as creative rebellion.
+
+Remember, agency doesn't mean "winning" — it means you get to keep something for yourself. Even if it's just the mug nobody else will ever hold.
+
+*Curiosity spark:* What's your studio's guilty pleasure? Glaze combos banished from the grid? Experimental forms living rent-free in a back shelf? Would you ever bring them to the light, trend be damned?
+
+**No Wrap-Up, Just a Punchline**
+
+Look, if you're reading this instead of scrolling, you've already earned a mental gold star. Pottery is still weird, and you're still stubborn — and there's no meme for that (yet).
+
+Drop a confession. Or a sneaky trick. Ask a question you don't want answered. Because in a world built for copy/paste, your quirks are currency. Let's see where curiosity — and a little gallows humour — can take us.`,
+  },
+  {
+    slug: "at-cold-mountain-studio-learning-as-presence",
+    imgKey: "blog2",
+    category: "Philosophy",
+    title: "At Cold Mountain Studio: Learning as Presence",
+    date: "October 16, 2025",
+    readTime: "6 min read",
+    excerpt:
+      "Nestled in the quiet hill town of Dharamshala, The Cold Mountain Studio stands on the soil of Byool Farm, where the rhythm of seasons guide our work. Our studio is built by hand from earth-bags — rising from the land itself.",
+    body: `Nestled in the quiet hill town of Dharamshala, The Cold Mountain Studio stands on the soil of Byool Farm, where the rhythm of seasons guide our work. Our studio here is built by hand from earth-bags — rising from the land itself — reminding us each day of our deep relationship with nature, impermanence, and return.
+
+Our guiding verse rests on an old mountain hermit's words, reshaped to echo our present:
+
+*I reached Cold Mountain and all cares stopped.*
+*No idle thoughts remained in my head.*
+*Nothing to do, I make mud into pots,*
+*And trust the current like an unmoored boat.*
+
+This verse, adapted from the Tang-dynasty poet Hanshan, is more than a slogan — it is our way of seeing. In Han-Shan's "Cold Mountain," the mountain, the self, and the act of making are one. His journey was not an escape from the world, but a return to the truth of being. That insight forms the spirit of our studio.
+
+**The Way of Zen Learning**
+
+At the heart of our practice lies the Zen approach to learning — direct, intuitive, and rooted in the present moment. Here, knowledge is not delivered through instruction alone but awakened through experience. Students discover through doing, notice through silence, and refine through repetition. In this process, clay becomes both teacher and text.
+
+We view art as a form of meditation. Each act of throwing, trimming, glazing, and firing becomes a conversation between self and material. Perfection is never the goal; presence is. Just as in Zen painting, art emerges when the mind is clear, and the form reveals truth beyond technique.
+
+**Experiential Learning: Mud, Fire, and Flow**
+
+To learn here is to experience directly — to touch earth, water, fire, and air, and to learn how they dance together. Whether students stay for a week or many months, they participate in rhythms guided by both craft and landscape. The monsoon's stillness, the mountain light, the hum of the kiln at night — all act as silent collaborators in the creative process.
+
+We welcome potters, designers, builders, and wanderers from across the world who come to explore not just how to make, but how to be while making.
+
+**Wabi-Sabi: Beauty in Becoming**
+
+Our aesthetic draws deeply from wabi-sabi, the Japanese philosophy born from Zen thought. Wabi-sabi teaches that beauty lives in imperfection, impermanence, and the marks left by time. A glaze that runs too thin, a tea-bowl slightly off-center — these are not mistakes; they are traces of the moment. They remind us that all things, like all people, are in constant becoming.
+
+Within this imperfect harmony, students learn that clay remembers touch. Every mark, intentional or not, has value. Every crack tells a story of transformation.
+
+**Nature as Master**
+
+Our studio doesn't separate art from environment. The forest, mist, and soil of Dharamshala are as much mentors as any human teacher. From the terraced fields to the mountain winds, nature informs our design, palette, and way of life. The earth-bag homes of Byool Farm, shaped by hand, reflect our belief that the built environment should return to the land with ease and grace.
+
+**Building a Community of Makers**
+
+Through this blog, we open space for sharing knowledge and dialogue. We will explore ceramics, glaze chemistry, mental well-being, earth building, design, and aesthetics — threads that weave together craft and consciousness. Our aim is to nurture a community where artists, seekers, and learners can meet in curiosity, generosity, and mutual growth.
+
+When you reach Cold Mountain, may your cares stop for a while.
+May clay teach you silence.
+May you, too, trust the current like an unmoored boat.`,
+  },
+  {
     slug: "why-a-pottery-retreat-feels-more-meaningful-in-2025",
-    imgKey: "course_retreat",
+    imgKey: "blog3",
     category: "Retreat",
     title: "Why a Pottery Retreat Feels More Meaningful in 2025",
     date: "March 8, 2025",
@@ -28,7 +128,7 @@ If you have been feeling the pull towards something slower, something real — t
   },
   {
     slug: "the-clay-circle-where-community-meets-clay",
-    imgKey: "course_fortnight",
+    imgKey: "blog2",
     category: "Community",
     title: "The Clay Circle — Where Community Meets Clay",
     date: "February 14, 2025",
@@ -49,7 +149,7 @@ If you are looking for a reason to join us, let this be it: not the pottery, but
   },
   {
     slug: "what-our-beginner-course-students-say",
-    imgKey: "course_monthly",
+    imgKey: "blog1",
     category: "Student Stories",
     title: "What Did Our Beginner Course Students Say About Their Experience?",
     date: "January 20, 2025",
@@ -79,7 +179,7 @@ If you'd like to be the next voice in this circle, our beginner courses are open
   },
   {
     slug: "the-art-of-glazing-surface-as-storytelling",
-    imgKey: "course_glaze",
+    imgKey: "blog3",
     category: "Craft",
     title: "The Art of Glazing — Surface as Storytelling",
     date: "December 5, 2024",

@@ -113,12 +113,12 @@ export default function Navbar() {
           ))}
 
           {/* About dropdown */}
-          {/* <li className="relative" ref={aboutRef}>
+          <li className="relative mt-1" ref={aboutRef}>
             <button
               onClick={() => setAboutOpen(o => !o)}
               className={`${linkCls} flex items-center gap-1 bg-transparent border-none p-0 font-jost`}
             >
-              About
+              Artists
               <svg width="9" height="9" viewBox="0 0 10 10" fill="none"
                 className={`transition-transform duration-200 ${aboutOpen ? "rotate-180" : ""}`}
               >
@@ -134,13 +134,15 @@ export default function Navbar() {
                 ].map(({ label, to }) => (
                   <Link
                     key={to} to={to}
+                     target="_blank"
+                     rel="noopener noreferrer"
                     onClick={() => setAboutOpen(false)}
                     className="block px-4 py-2.5 text-[0.72rem] tracking-[0.08em] uppercase text-earth hover:text-clay hover:bg-cream transition-colors no-underline"
                   >{label}</Link>
                 ))}
               </div>
             )}
-          </li> */}
+          </li>
 
           {/* Pills */}
           <li><Link to="/shop" className={pillCls}>Shop</Link></li>
@@ -197,6 +199,9 @@ export default function Navbar() {
           // { label: "About — Swapna",   to: "/about/swapna" },
           { label: "FAQ",              action: () => goToSection("faq") },
           { label: "Stay",             href: "https://byoolfarmstay.com/" },
+          { label: "About", to: "/about" },         
+          { label: "Lakhan", to: "/about/lakhan" },  
+          { label: "Swapna", to: "/about/swapna" },  
           { label: "Contact",          action: () => goToSection("contact") },
           { label: "Shop",             to: "/shop" },
           { label: "Instagram",        href: "https://www.instagram.com/thecoldmountainstudio/" },

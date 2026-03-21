@@ -56,15 +56,12 @@ export { default as shop_mugs }    from "./images/shop_mugs.jpg";
 export { default as shop_vessels } from "./images/shop_vessels.jpg";
 export { default as shop_cups }    from "./images/shop_cups.jpg";
 export { default as shop_custom }  from "./images/shop_custom.jpg";
+export { default as shop_dinnerware }  from "./images/shop_dinnerware.jpg";
+export { default as shop_drinkware }  from "./images/shop_drinkware.png";
+export { default as shop_serverware  }  from "./images/shop_serverware.png";
 
-// ── Our Work page — product shots ────────────────────────────────────────────
-export { default as work_product_1 } from "./images/work_product_1.jpg";
-export { default as work_product_2 } from "./images/work_product_2.jpg";
-export { default as work_product_3 } from "./images/work_product_3.jpg";
-export { default as work_product_4 } from "./images/work_product_4.jpg";
-export { default as work_product_5 } from "./images/work_product_5.jpg";
-export { default as work_product_6 } from "./images/work_product_6.jpg";
-export { default as work_product_7 } from "./images/work_product_7.jpg";
+
+
 
 // ── Our Work page — studio process shots ─────────────────────────────────────
 export { default as work_studio_1 } from "./images/work_studio_1.jpg";
@@ -93,3 +90,29 @@ export { default as about1 } from "./images/about1.jpg";
 export { default as about2 } from "./images/about2.jpg";
 export { default as about3 } from "./images/about3.jpg";
 export { default as about_wallpaper } from "./images/about_wallpaper.jpg";
+
+export { default as blog_background } from "./images/blog_background.jpg";
+export { default as blog1 } from "./images/blog1.jpg";
+export { default as blog2 } from "./images/blog2.jpg";
+export { default as blog3 } from "./images/blog3.jpg";
+
+//Work 
+export { default as smp_1 } from "./images/smp-1.JPG";
+export { default as smp_2 } from "./images/smp-2.JPG";
+export { default as smp_3 } from "./images/smp-3.JPG";
+export { default as smp_4 } from "./images/smp-4.JPG";
+export { default as smp_5 } from "./images/smp-5.jpg";
+export { default as smp_6 } from "./images/smp-6.jpg";
+export { default as smp_7 } from "./images/smp-7.jpg";
+export { default as smp_8 } from "./images/smp-8.jpg";
+export { default as smp_9 } from "./images/smp-9.jpg";
+export { default as smp_10 } from "./images/smp-10.jpg";
+export { default as smp_11 } from "./images/smp-11.jpg";
+export { default as smp_12 } from "./images/smp-12.jpg";
+export { default as smp_13 } from "./images/smp-13.jpg";
+export { default as smp_14 } from "./images/smp-14.jpg";
+export { default as smp_15 } from "./images/smp-15.jpg";
+export { default as smp_16 } from "./images/smp-16.jpg";
+
+export { default as lakhan_portrait } from "./images/smp-16.jpg";
+export { default as swapna_portrait } from "./images/smp-16.jpg";
