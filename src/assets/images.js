@@ -98,21 +98,21 @@ export { default as blog3 } from "./images/blog3.jpg";
 
 //Work 
 export { default as smp_1 } from "./images/smp-1.JPG";
-export { default as smp_2 } from "./images/smp-2.JPG";
-export { default as smp_3 } from "./images/smp-3.JPG";
+export { default as smp_2 } from "./images/smp-2.jpg";
+export { default as smp_3 } from "./images/smp-3.jpg";
 export { default as smp_4 } from "./images/smp-4.JPG";
 export { default as smp_5 } from "./images/smp-5.jpg";
 export { default as smp_6 } from "./images/smp-6.jpg";
 export { default as smp_7 } from "./images/smp-7.jpg";
 export { default as smp_8 } from "./images/smp-8.jpg";
-export { default as smp_9 } from "./images/smp-9.jpg";
+export { default as smp_9 } from "./images/smp-9.JPG";
 export { default as smp_10 } from "./images/smp-10.jpg";
-export { default as smp_11 } from "./images/smp-11.jpg";
+export { default as smp_11 } from "./images/smp-11.JPG";
 export { default as smp_12 } from "./images/smp-12.jpg";
-export { default as smp_13 } from "./images/smp-13.jpg";
+export { default as smp_13 } from "./images/smp-13.JPG";
 export { default as smp_14 } from "./images/smp-14.jpg";
-export { default as smp_15 } from "./images/smp-15.jpg";
-export { default as smp_16 } from "./images/smp-16.jpg";
+export { default as smp_15 } from "./images/smp-15.JPG";
+export { default as smp_16 } from "./images/smp-16.JPG";
 
-export { default as lakhan_portrait } from "./images/smp-16.jpg";
-export { default as swapna_portrait } from "./images/smp-16.jpg";
+export { default as lakhan_portrait } from "./images/smp-16.JPG";
+export { default as swapna_portrait } from "./images/smp-16.JPG";
