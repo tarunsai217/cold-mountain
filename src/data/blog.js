@@ -6,6 +6,200 @@
 
 export const POSTS = [
   {
+    slug: "slow-hands-fast-brain",
+    imgKey: "blog11",
+    category: "Psychology",
+    title: "Slow Hands, Fast Brain",
+    imgPos: "center",
+    date: "June 30, 2026",
+    readTime: "5 min read",
+    excerpt: "My hands were tracing slow circles in wet clay. My brain was weaving a to-do list tight enough to strangle any concept of 'slow living'. Nothing inside me had slowed down. I had just changed scenery.",
+    author: "Cold Mountain Studio",
+    body: `The day I realised my studio wasn’t actually “slow” started like an advert for the slow life.
+Kiln cooling from last night.
+New bags of clay stacked in the corner.
+Mugs in different stages of being born.
+The kind of morning where you look around and think,
+“If I can’t relax here, where can I relax?”
+
+I sat at the wheel telling myself exactly that:
+“Okay. Today, we slow down.”
+
+Clay on the wheel.
+Hands wet.
+Foot on the pedal.
+Body finally in one place.
+
+It looked like everything those “pottery is calming” posts promise.
+
+Inside my head, it sounded more like this:
+Did I reorder that clay or just think about it?
+Those three bowls didn’t sell—are they bad, or am I bad at pricing?
+The last firing had pinholes; did I fix the actual problem or just the caption?
+If I don’t have new work for the next market, what does that say about me?
+I’m tired. Can I afford to be tired today?
+
+My hands were tracing slow circles in wet clay.
+My brain was weaving a to-do list tight enough to strangle any concept of “slow living”.
+
+Nothing inside me had slowed down.
+I had just changed scenery.
+
+Same speed.
+Different backdrop.
+
+Clay didn’t care.
+It sat there, blunt and patient, refusing to match my urgency,
+recording every rushed pull and distracted touch like a silent witness.
+
+And then a very rude sentence showed up, uninvited:
+“You didn’t slow down.
+You just moved your hustle to a different room.”
+
+I actually froze at the wheel.
+
+Because that was it.
+That was the thing I hadn’t wanted to say out loud.
+
+I had turned my refuge into a stage.
+
+Not a fake stage with fake smiles.
+A stage where I prove, to myself and anyone watching, that I am still:
+- productive,
+- driven,
+- “serious” about my work,
+- okay.
+
+Same wheel I came to for breathing space.
+Now also a scoreboard.
+
+The line I’d been using—“Pottery helps me slow down”—wasn’t wrong.
+It was simply missing the second half:
+“…on the outside.”
+
+On the inside, I was still running the same script I’d always run:
+If I’m not producing, I’m failing.
+If I rest, I’m wasting time.
+If I slow down, I’ll fall behind.
+
+Clay was just the new place I brought that script to.
+
+My craft was slow.
+My hands were slow.
+My brain was still living like there was a timer on the wall.
+
+That gap—slow hands, fast brain—became impossible to ignore.
+
+You can see it, once you know what you’re looking for:
+- Wedging while mentally rearranging next week’s schedule.
+- Trimming with your jaw tight because your inbox is full.
+- Glazing safe pieces because “there’s no time for risky failures right now.”
+- Watching the kiln cool and calculating its “financial worth” before noticing how your own body feels.
+
+Nothing wrong with being responsible.
+Everything wrong with calling that “slowing down”.
+
+Clay, annoyingly honest, refused to participate in my drama.
+
+It dried when it dried.
+Cracked where I pushed it.
+Softened where I gave it time.
+It did not care how “busy” I was.
+It only cared how I touched it.
+
+And that’s when my favourite lie collapsed in one sentence:
+“I didn’t come to clay to slow down.
+I came to clay to feel like I’d slowed down
+while staying exactly as fast inside.”
+
+Uncomfortable? Yes.
+Useful? Very.
+
+Because once you admit that, you suddenly have a much clearer starting point than “be more mindful”:
+You start asking better questions.
+
+Not “Is pottery calming?”
+You already know it can be.
+
+More like:
+“What am I using pottery to prove today?”
+
+That day at the wheel, the answer was ugly and simple:
+“I’m using it to prove I’m still productive.”
+
+Not to feel.
+Not to breathe.
+Not to listen.
+To prove.
+
+And then another question:
+“If clay is the only thing in this room moving at a healthy pace,
+am I willing to admit that the problem is not my craft,
+it’s my speed?”
+
+That’s when “slow hands, fast brain” stops being a poetic phrase and starts being a diagnosis of your relationship with your own life.
+
+Nothing “healed”.
+But something became very clear:
+
+I had changed medium.
+I had never changed pace.
+
+The wheel wasn’t the problem.
+My deal with myself was.
+
+So I didn’t respond with a grand life overhaul.
+I did one small, slightly savage thing:
+
+I stopped giving myself credit for “slowing down” just because I was touching clay.
+
+No gold star for “I’m at the wheel, therefore I’m gentle with myself.”
+No automatic halo for “I chose a slow craft, therefore I live a slow life.”
+
+Instead, I started using one new, brutally honest studio question:
+“If someone could run their hands over my day
+the way they run their hands over this pot,
+would it feel as even, as considered, as cared for?”
+
+If the answer is “no”, then I don’t get to hide behind the sentence “pottery helps me slow down” without an asterisk.
+
+I get to say:
+“Pottery taught my hands to move differently.
+Now I have to decide if the rest of me actually wants to follow.”
+
+Maybe that’s the only honest place to land for now:
+I did not magically become a “slow person” because I chose a slow craft.
+I became a fast person who sits in front of slow clay and has to decide, every single day, what to do about that gap.
+
+I can keep using pottery as a prettier way to outrun myself.
+Or I can let the wheel expose the speed I’m still living at and admit:
+“My hands have changed.
+My pace hasn’t.
+Now the question is—do I want it to?”
+
+If that sentence feels a little too close, don’t rush to fix it.
+Let it sit in the studio with you.
+
+Talk about it with the potter next to you.
+Argue with it.
+Push back.
+Or quietly admit, “Yeah… that’s me.”
+
+Because the point of this series isn’t to crown pottery as the cure.
+It’s to start the one conversation we keep skipping:
+What does slowing down really mean—
+when the clay is honest,
+the wheel is still,
+and the only thing left to examine
+is the pace of the person making the pot?
+
+If we can stay with that question,
+even for a few uncomfortable minutes,
+then maybe, finally,
+clay won’t be the only thing in the room
+moving at a kinder speed.`,
+  },
+  {
     slug: "the-bubble-didnt-kill-your-piece",
     imgKey: "blog4",
     category: "Psychology",

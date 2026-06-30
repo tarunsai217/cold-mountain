@@ -22,21 +22,74 @@ export default function BlogPostPage() {
   const img         = IMGS[post.imgKey] || post.imgKey;
   const otherPosts  = POSTS.filter(p => p.slug !== slug).slice(0, 3);
 
-  // Render body — paragraphs separated by double newlines, **bold** inline
+  // Render body — paragraphs separated by double newlines, supporting lists and bold inline
   const renderBody = (text) => {
     return text.split("\n\n").map((para, i) => {
-      // Handle **bold** markdown
-      const parts = para.split(/(\*\*[^*]+\*\*)/g);
-      const rendered = parts.map((part, j) => {
-        if (part.startsWith("**") && part.endsWith("**")) {
-          return <strong key={j} className="font-medium text-charcoal-dark">{part.slice(2, -2)}</strong>;
+      const lines = para.split("\n");
+      const elements = [];
+      let currentList = [];
+      let currentTextGroup = [];
+
+      const flushText = (key) => {
+        if (currentTextGroup.length > 0) {
+          const textContent = currentTextGroup.join(" ");
+          const parts = textContent.split(/(\*\*[^*]+\*\*)/g);
+          const renderedText = parts.map((part, k) => {
+            if (part.startsWith("**") && part.endsWith("**")) {
+              return <strong key={k} className="font-medium text-charcoal-dark">{part.slice(2, -2)}</strong>;
+            }
+            return part;
+          });
+          elements.push(
+            <p key={key} className="text-[1.05rem] md:text-[1.12rem] leading-[1.8] text-earth-light/95 mb-8 last:mb-0 font-light tracking-wide">
+              {renderedText}
+            </p>
+          );
+          currentTextGroup = [];
         }
-        return part;
+      };
+
+      const flushList = (key) => {
+        if (currentList.length > 0) {
+          elements.push(
+            <ul key={key} className="list-disc pl-6 mb-8 last:mb-0 space-y-2 text-[1.05rem] md:text-[1.12rem] leading-[1.8] text-earth-light/95 font-light tracking-wide">
+              {currentList}
+            </ul>
+          );
+          currentList = [];
+        }
+      };
+
+      lines.forEach((line, j) => {
+        const trimmed = line.trim();
+        const isBullet = trimmed.startsWith("-") || trimmed.startsWith("•") || (trimmed.startsWith("*") && !trimmed.startsWith("**"));
+
+        if (isBullet) {
+          flushText(`text-${j}`);
+          const cleanLine = trimmed.replace(/^[-•*]\s*/, "");
+          const parts = cleanLine.split(/(\*\*[^*]+\*\*)/g);
+          const renderedItem = parts.map((part, k) => {
+            if (part.startsWith("**") && part.endsWith("**")) {
+              return <strong key={k} className="font-medium text-charcoal-dark">{part.slice(2, -2)}</strong>;
+            }
+            return part;
+          });
+          currentList.push(<li key={`li-${j}`}>{renderedItem}</li>);
+        } else {
+          flushList(`list-${j}`);
+          if (trimmed) {
+            currentTextGroup.push(trimmed);
+          }
+        }
       });
+
+      flushText("text-final");
+      flushList("list-final");
+
       return (
-        <p key={i} className="text-[1.05rem] md:text-[1.12rem] leading-[1.8] text-earth-light/95 mb-8 font-light tracking-wide">
-          {rendered}
-        </p>
+        <div key={i}>
+          {elements}
+        </div>
       );
     });
   };
