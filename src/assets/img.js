@@ -82,6 +82,7 @@ export const blog3 = "/images/blog3.webp";
 export const blog4 = "/images/blog4_v2.webp";
 export const blog5 = "/images/blog5.webp";
 export const blog6 = "/images/blog6.webp";
+export const blog7 = "/images/blog7.jpg";
 
 export const blog11 = "/images/day_at_farm_11.webp";
 

@@ -6,6 +6,213 @@
 
 export const POSTS = [
   {
+    slug: "when-pricing-your-pots-feels-like-a-personality-test",
+    imgKey: "blog7",
+    category: "Psychology",
+    title: "When Pricing Your Pots Feels Like a Personality Test!",
+    imgPos: "center",
+    date: "August 8, 2026",
+    readTime: "5 min read",
+    excerpt: "If you’ve ever dropped your price mid-sentence because the buyer went quiet, or sold out and still gone home slightly annoyed with yourself, we're going to talk about what’s happening in your nervous system—not in your spreadsheet.",
+    body: `If you’ve ever dropped your price mid-sentence because the buyer went quiet, this one’s about you.
+
+If you’ve ever sold out and still gone home slightly annoyed with yourself, this one’s definitely about you.
+
+And if you’ve ever looked at another potter’s prices and thought, “I could never charge that,” we’re going to talk about what’s happening in your nervous system—not in your spreadsheet.
+
+I’m less interested in what your clay costs.
+I’m very interested in what your body does when you say your price out loud.
+
+## The Four Voices That Show Up When You Write a Price
+
+Every time you pick up a pen and a sticker, a small committee appears.
+
+### The Practical One
+
+“Clay was this much. Firing, rent, table fee, time.”
+
+This voice keeps you out of fantasy. It’s useful. It’s just not the whole story.
+
+### The Crowd-Watcher
+
+“My regulars won’t pay that.”
+
+“The potter next to me is cheaper.”
+
+“If they put it down and walk away, I’ll feel silly.”
+
+This voice is trying to protect you from embarrassment, not bankruptcy.
+
+### The Self-Respect Voice
+
+“How do I actually feel about this particular piece?”
+
+“Will I feel a little sting if it leaves for that number?”
+
+“Does this price match the care and risk I put into it?”
+
+This voice often speaks very quietly. You can hear it if you slow down.
+
+### The Belonging Voice
+
+“If I charge more, will people say I’ve changed?”
+
+“I don’t want to be ‘the expensive one’ in the group.”
+
+“What if other potters think I rate myself too highly?”
+
+This voice is not about money at all. It’s about staying safely inside your circle.
+
+When people tell me they have a “pricing problem”, it’s almost never just numbers.
+It’s these four voices trying to keep them safe in different ways.
+
+Pricing, for most potters I talk to, is less about arithmetic and more about how visible they’re willing to be as someone who values their own work.
+
+## Three Patterns I Hear Again and Again
+
+I’m going to name these gently but directly. You might recognise yourself in one, or in all three at different times.
+
+### 1. The Kind Undercutter
+
+You keep prices low and call it “making my work accessible”.
+
+Underneath, there’s often a softer truth:
+
+You don’t want anyone to ever think you’re greedy.
+
+You’re worried that higher prices will make people assume you’ve become arrogant.
+
+You’re more comfortable protecting others from big numbers than protecting yourself from burnout.
+
+Over time, that can feel less like generosity and more like quietly stepping over your own value.
+
+### 2. The Tired Educator
+
+You charge what the work deserves. The maths is fine.
+
+But any question about price feels like a challenge, so you find yourself:
+
+- explaining every step of the making process,
+- defending handmade against mass-produced,
+- walking people through your costs in detail.
+
+By the end of a market, you’ve given ten small lectures and have nothing left in the tank.
+
+It’s not that your customers are hostile. It’s that the price has become a stand-in for your worth, so every conversation is heavier than it needs to be.
+
+### 3. The Human Barometer
+
+Your prices move around based on how the last event felt.
+
+Good market?
+
+“Too cheap—next time I’ll go higher.”
+
+Slow market?
+
+“Too expensive—next time I’ll go lower.”
+
+You’re reading your own value off other people’s reactions. That’s very human, but it’s also exhausting. There’s no stable inner sense of “this feels right”; there’s only “this seemed to work last time”.
+
+## One Small Scene That Holds a Lot
+
+Night before a sale.
+
+You’re tagging pots.
+
+On the table:
+
+A few solid, everyday pieces.
+
+A few you’re not in love with but they’re fine.
+
+One that is quietly special to you.
+
+You pick up the special one.
+Blank sticker. Pen. Pause.
+
+Practical voice suggests a sensible number.
+
+Crowd-Watcher immediately suggests something lower “for this market”.
+
+Self-Respect offers something a bit higher that actually matches how you feel about it.
+
+Belonging Voice says:
+
+“If you write that higher number, you’ll be the potter who thinks their work is worth that.”
+
+That’s the moment I’m most interested in, as a psychologist.
+
+Because often, the decision you make next is not about clay or rent.
+It’s about whether you’re willing to be seen as someone who thinks well of their own work.
+
+Many potters choose safety there. Not because their work doesn’t deserve more, but because they don’t yet feel okay standing next to a bigger number.
+
+That’s why I say: pricing is exposure therapy in disguise.
+Every tag is a tiny experiment in how much self-respect you’ll allow yourself in public.
+
+## A Very Small Dare: The Shaky Hand Piece
+
+I’m not going to tell you to rewrite your whole pricing structure.
+
+Instead, here’s one experiment I use with clients. It’s simple, and surprisingly revealing.
+
+Next time you’re tagging a batch, do this:
+
+**Choose one piece**
+Not the “safe” one. The one that secretly matters to you.
+
+**Price everything else as usual**
+Your normal logic. No big drama.
+
+**For that one piece, let the Self-Respect Voice decide**
+Write the number that feels clean and honest in your gut.
+Not outrageous. Just the number you’d choose if you trusted yourself completely.
+
+**Notice your hand**
+If your hand shakes a little, if your chest tightens, if your brain starts negotiating—that’s exactly the data we’re looking for.
+
+That’s your **Shaky Hand Piece**.
+
+The point is not “sell it at that price or you've failed”.
+
+The point is to watch what happens inside you when your worth is visible in one small, concrete way.
+
+Do you find yourself explaining it more than the others?
+
+Avoiding mentioning the price unless asked?
+
+Feeling quietly proud it’s there, even if no one buys it yet?
+
+All of that tells you how your nervous system currently handles being seen as “someone who charges that”.
+
+## If You’re a Seasoned Potter
+
+I know you’ve done the maths.
+
+You know your costs, your market, your peers.
+
+The questions you may not have asked yet are more like:
+
+“What’s the highest number my hand has ever written on a pot, and what did I tell myself afterwards?”
+
+“Whose opinion am I most afraid of when I raise my prices—customers, fellow potters, family?”
+
+“If my favourite younger potter charged what I charge, would I feel proud for them or worried for them?”
+
+Those questions go beyond pricing into how you see yourself and your place in your community.
+
+If you feel like sharing, I’d be very curious to hear:
+
+your Shaky Hand Piece story,
+
+the sentence that shows up in your head when someone puts a piece down after seeing the price,
+
+or the invisible line you haven’t crossed yet with your numbers.
+
+That’s the conversation where things start to move—not just on your tags, but in how you inhabit your own work.`,
+  },
+  {
     slug: "slow-hands-fast-brain",
     imgKey: "blog11",
     category: "Psychology",

@@ -63,8 +63,46 @@ export default function BlogPostPage() {
       lines.forEach((line, j) => {
         const trimmed = line.trim();
         const isBullet = trimmed.startsWith("-") || trimmed.startsWith("•") || (trimmed.startsWith("*") && !trimmed.startsWith("**"));
+        const isHeading = trimmed.startsWith("#");
 
-        if (isBullet) {
+        if (isHeading) {
+          flushText(`text-${j}`);
+          flushList(`list-${j}`);
+          const match = trimmed.match(/^(#{1,6})\s+(.*)$/);
+          if (match) {
+            const level = match[1].length;
+            const content = match[2];
+            const parts = content.split(/(\*\*[^*]+\*\*)/g);
+            const renderedContent = parts.map((part, k) => {
+              if (part.startsWith("**") && part.endsWith("**")) {
+                return <strong key={k} className="font-medium text-clay-dark">{part.slice(2, -2)}</strong>;
+              }
+              return part;
+            });
+
+            if (level === 1) {
+              elements.push(
+                <h2 key={`h1-${j}`} className="font-cormorant text-2xl md:text-3xl text-charcoal mt-10 mb-4 font-normal leading-snug">
+                  {renderedContent}
+                </h2>
+              );
+            } else if (level === 2) {
+              elements.push(
+                <h3 key={`h2-${j}`} className="font-cormorant text-xl md:text-2xl text-charcoal mt-8 mb-4 font-normal leading-snug">
+                  {renderedContent}
+                </h3>
+              );
+            } else {
+              elements.push(
+                <h4 key={`h3-${j}`} className="font-cormorant text-lg md:text-xl text-charcoal mt-6 mb-3 font-normal leading-snug">
+                  {renderedContent}
+                </h4>
+              );
+            }
+          } else {
+            currentTextGroup.push(trimmed);
+          }
+        } else if (isBullet) {
           flushText(`text-${j}`);
           const cleanLine = trimmed.replace(/^[-•*]\s*/, "");
           const parts = cleanLine.split(/(\*\*[^*]+\*\*)/g);
@@ -87,7 +125,7 @@ export default function BlogPostPage() {
       flushList("list-final");
 
       return (
-        <div key={i}>
+        <div key={i} className="mb-4">
           {elements}
         </div>
       );
