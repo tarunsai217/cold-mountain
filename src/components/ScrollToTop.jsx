@@ -6,14 +6,24 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     if (hash) {
-      // Small timeout to ensure the new page has rendered
-      setTimeout(() => {
-        const id = hash.replace("#", "");
+      const id = hash.replace("#", "");
+      let attempts = 0;
+      const maxAttempts = 50; // Try for up to 5 seconds (50 * 100ms)
+      
+      const interval = setInterval(() => {
         const element = document.getElementById(id);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
+          clearInterval(interval);
+        } else {
+          attempts++;
+          if (attempts >= maxAttempts) {
+            clearInterval(interval);
+          }
         }
       }, 100);
+
+      return () => clearInterval(interval);
     } else {
       window.scrollTo(0, 0);
     }
